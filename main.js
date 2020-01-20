@@ -32,7 +32,7 @@ const prevSlide = () => {
 }
 
 const buttonColors = () => {
-    if (firstSlide.classList.contains('current') || lastSlide.classList.contains('current')) {
+    if (firstSlide.classList.contains('current')) {
         btnNext.style.color = 'black';
         btnNext.style.border = '2px black solid';
         btnPrev.style.color = 'black';

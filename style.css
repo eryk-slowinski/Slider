@@ -27,33 +27,11 @@ body {
     width: 100%;
     height: 100%;
     opacity: 0;
-    transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in;
 }
 
 .slide.current {
     opacity: 1;
-}
-
-.slide .content {
-    position: absolute;
-    bottom: 70px;
-    left: -600px;
-    opacity: 0;
-    width: 600px;
-    background-color: rgba(255, 255, 255, 0.8);
-    color: #333;
-    padding: 35px;
-}
-
-.slide .content h1 {
-    margin-bottom: 10px;
-    border-bottom: 2px solid rgb(54, 52, 52);
-}
-
-.slide.current .content {
-    opacity: 1;
-    transform: translateX(600px);
-    transition: all 0.7s ease-in-out 0.3s;
 }
 
 .buttons button.next {
@@ -85,9 +63,6 @@ body {
     color: rgb(46, 43, 43);
 }
 
-
-
-
 .slide:first-child {
     background: url("img/Warp-vessel.jpg") no-repeat center top/cover;
 }
@@ -102,4 +77,60 @@ body {
 
 .slide:nth-child(4) {
     background: url("img/Colony.jpg") no-repeat center top/cover;
+}
+
+.slide .content h1 {
+    margin-bottom: 10px;
+    border-bottom: 2px solid rgb(54, 52, 52);
+}
+
+.slide .content {
+    position: absolute;
+    opacity: 0;
+    width: 600px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    padding: 35px;
+}
+
+.slide.current .content {
+    opacity: 1;
+    transition: all .6s ease-in-out 1.2s;
+}
+
+.slide:nth-child(1) .content {
+    top: -140px;
+    right: 140px;
+}
+
+.slide:nth-child(1) .content {
+    transform: translateY(170px);
+
+}
+
+.slide:nth-child(2) .content {
+    bottom: 150px;
+    left: -600px;
+}
+
+.slide:nth-child(2) .content {
+    transform: translateX(700px);
+}
+
+.slide:nth-child(3) .content {
+    top: 100px;
+    left: -600px;
+}
+
+.slide:nth-child(3) .content {
+    transform: translateX(700px);
+}
+
+.slide:nth-child(4) .content {
+    bottom: -500px;
+    left: 50%;
+}
+
+.slide:nth-child(4) .content {
+    transform: translateY(-600px)translateX(-50%);
 }

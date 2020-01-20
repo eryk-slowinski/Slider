@@ -103,9 +103,8 @@ body {
     right: 140px;
 }
 
-.slide:nth-child(1) .content {
+.slide.current:nth-child(1) .content {
     transform: translateY(170px);
-
 }
 
 .slide:nth-child(2) .content {
@@ -113,7 +112,7 @@ body {
     left: -600px;
 }
 
-.slide:nth-child(2) .content {
+.slide.current:nth-child(2) .content {
     transform: translateX(700px);
 }
 
@@ -122,7 +121,7 @@ body {
     left: -600px;
 }
 
-.slide:nth-child(3) .content {
+.slide.current:nth-child(3) .content {
     transform: translateX(700px);
 }
 
@@ -131,6 +130,6 @@ body {
     left: 50%;
 }
 
-.slide:nth-child(4) .content {
+.slide.current:nth-child(4) .content {
     transform: translateY(-600px)translateX(-50%);
 }
